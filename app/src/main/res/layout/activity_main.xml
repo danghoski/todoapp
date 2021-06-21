@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="40sp"
+        android:textColorHighlight="@color/teal_700"
+        android:textStyle="italic"
+         />
+
+    <EditText
+        android:id="@+id/userNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Please Enter User Name"
+
+        />
+
+    <EditText
+        android:id="@+id/passWordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Please Enter Password"/>
+
+    <Button
+        android:id="@+id/SubmitBotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:textColor="@color/teal_700"/>
+
+
+</LinearLayout>
