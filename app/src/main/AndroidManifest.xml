@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Todoapp">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".AskActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".profileActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

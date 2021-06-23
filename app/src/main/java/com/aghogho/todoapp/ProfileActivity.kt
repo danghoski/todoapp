@@ -1,22 +1,31 @@
 package com.aghogho.todoapp
 
+import android.content.Intent
 import android.icu.number.NumberFormatter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
-class HomeActivity : AppCompatActivity() {
+
+class ProfileActivity : AppCompatActivity() {
 
     private lateinit var usernameDisplay: TextView
     private lateinit var profileButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_profile)
 
-        usernameDisplay = findViewById(R.id.userNameInput)
+        profileButton = findViewById(R.id.profileButton)
 
-        usernameDisplay.text = "Welcome, ${intent.getStringExtra("UserName")}"
+        usernameDisplay.text = intent.getStringExtra("Username")
+
+        profileButton.setOnClickListener {
+            profileButton
+        }
+
+ 
+
     }
 }
